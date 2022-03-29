@@ -1,11 +1,6 @@
 import Foundation
 
-enum Commands {
-    static let saltVl = "SomeSalt123456dgsdgqg" // Is a salt. We use it to mix with our original string.
-    static var separVl = "FGG" // Is a separator. We use it to create string from array of numbers (UTF8), and separate encrypted string to original.
-
-    // !!! We have to use the same salt and separator to encrypt and decrypt. If we change the parameter we should
-
+enum CommandsMtd {
     // encrypting the string that we pass to the method
     static func mtdEnc(with sting: String, slat: String) -> String {
         let txt = [UInt8](sting.utf8) // original text in utf8
@@ -25,5 +20,4 @@ enum Commands {
         } // decrypt original string
         return String(bytes: dcd, encoding: .utf8) ?? ""
     }
-
 }
