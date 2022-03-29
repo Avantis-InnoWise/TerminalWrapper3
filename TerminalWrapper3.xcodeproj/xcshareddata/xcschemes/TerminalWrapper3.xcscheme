@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D13CD88627BA5C8D00C3402A"
-               BuildableName = "TerminalWrapper1"
+               BuildableName = "TerminalWrapper3"
                BlueprintName = "TerminalWrapper3"
                ReferencedContainer = "container:TerminalWrapper3.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D13CD88627BA5C8D00C3402A"
-            BuildableName = "TerminalWrapper1"
+            BuildableName = "TerminalWrapper3"
             BlueprintName = "TerminalWrapper3"
             ReferencedContainer = "container:TerminalWrapper3.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D13CD88627BA5C8D00C3402A"
-            BuildableName = "TerminalWrapper1"
+            BuildableName = "TerminalWrapper3"
             BlueprintName = "TerminalWrapper3"
             ReferencedContainer = "container:TerminalWrapper3.xcodeproj">
          </BuildableReference>
