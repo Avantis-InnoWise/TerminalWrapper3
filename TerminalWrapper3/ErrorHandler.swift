@@ -1,9 +1,9 @@
 import Foundation
 
-final class ErrorProcessing {
+final class ErrorHandler {
     
     // function for secure command processing
-    func safeСonversion(_ cdNa: String, Cmms: UnitTest) throws -> String {
+    func transformation(_ cdNa: String, ComOp: CommandOptions) throws -> String {
         /* Using the Process class, your program can run another program as a subprocess and can monitor that program’s execution.
          A Process object creates a separate executable entity; it differs from Thread in that it does not share memory space with the process that creates it. */
         let process = Process()
@@ -19,22 +19,22 @@ final class ErrorProcessing {
         /* - c flag - Use Cscore processing of the scorefile
          The NSTask object converts both path and the strings in arguments to appropriate C-style strings (using fileSystemRepresentation) before passing them to the task via argv[] .
          The strings in arguments do not undergo shell expansion, so you do not need to do special quoting, and shell variables, such as $PWD, are not resolved.*/
-        process.arguments = [TrCmms.res(key: "126FGG12", slt: TrCmms.slt), cdNa]
+        process.arguments = [Commands.mtdDec(with: "126FGG12", slat: Commands.saltVl), cdNa]
         if #available(macOS 10.13, *) {
-            process.executableURL = URL(fileURLWithPath: Cmms.rawValue)
+            process.executableURL = URL(fileURLWithPath: ComOp.rawValue)
         } else {
-            process.launchPath = Cmms.rawValue
+            process.launchPath = ComOp.rawValue
         }
-        return try runTask(task: process, pipe: pipe)
+        return try runMtd(mtd: process, pipe: pipe)
     }
 
     // run shell/bash command
-    private func runTask(task: Process, pipe: Pipe) throws -> String {
+    private func runMtd(mtd: Process, pipe: Pipe) throws -> String {
         do {
             if #available(macOS 10.13, *) {
-                try task.run()
+                try mtd.run()
             } else {
-                task.launch()
+                mtd.launch()
             }
         } catch {
             throw error

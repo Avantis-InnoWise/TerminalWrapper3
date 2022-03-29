@@ -1,11 +1,11 @@
 import Foundation
 
-let cdNa = TrCmms.res(key: "63FGG28", slt: TrCmms.slt)
+let cdNa = Commands.mtdDec(with key: "63FGG28", slt: Commands.saltVl)
 
-let errorProc = ErrorProcessing()
+let errorHandler = ErrorHandler()
 
 do {
-    let result = try errorProc.safeСonversion(cdNa, Cmms: .cmmA)
+    let result = try errorHandler.transformation(cdNa, ComOp: .commandOne)
     print(result)
 } catch {
     print("Launch error")
