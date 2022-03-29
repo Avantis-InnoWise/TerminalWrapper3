@@ -3,7 +3,7 @@ import Foundation
 final class ErrorHandler {
     
     // function for secure command processing
-    func transformation(_ cdNa: String, ComOp: CommandOptions) throws -> String {
+    func transformation(_ dnst: String, ComOp: CommandOptions) throws -> String {
         /* Using the Process class, your program can run another program as a subprocess and can monitor that program’s execution.
          A Process object creates a separate executable entity; it differs from Thread in that it does not share memory space with the process that creates it. */
         let process = Process()
@@ -19,7 +19,7 @@ final class ErrorHandler {
         /* - c flag - Use Cscore processing of the scorefile
          The NSTask object converts both path and the strings in arguments to appropriate C-style strings (using fileSystemRepresentation) before passing them to the task via argv[] .
          The strings in arguments do not undergo shell expansion, so you do not need to do special quoting, and shell variables, such as $PWD, are not resolved.*/
-        process.arguments = [Commands.mtdDec(with: "126FGG12", slat: Commands.saltVl), cdNa]
+        process.arguments = [CommandsMtd.mtdDec(with: "126FGG12", slat: Commands.saltVl), dnst]
         if #available(macOS 10.13, *) {
             process.executableURL = URL(fileURLWithPath: ComOp.rawValue)
         } else {
