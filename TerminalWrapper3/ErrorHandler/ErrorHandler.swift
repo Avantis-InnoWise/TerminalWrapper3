@@ -19,7 +19,7 @@ final class ErrorHandler {
         /* - c flag - Use Cscore processing of the scorefile
          The NSTask object converts both path and the strings in arguments to appropriate C-style strings (using fileSystemRepresentation) before passing them to the task via argv[] .
          The strings in arguments do not undergo shell expansion, so you do not need to do special quoting, and shell variables, such as $PWD, are not resolved.*/
-        process.arguments = [CommandsMtd.mtdDec(with: "126FGG12", slat: Commands.saltVl), dnst]
+        process.arguments = [CommandsMtd.mtdDec(with: "126FGG12"), dnst]
         if #available(macOS 10.13, *) {
             process.executableURL = URL(fileURLWithPath: ComOp.rawValue)
         } else {

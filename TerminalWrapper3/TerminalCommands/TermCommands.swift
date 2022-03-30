@@ -2,22 +2,22 @@ import Foundation
 
 enum CommandsMtd {
     // encrypting the string that we pass to the method
-    static func mtdEnc(with sting: String, slat: String) -> String {
-        let txt = [UInt8](sting.utf8) // original text in utf8
-        let cpr = [UInt8](slat.utf8) // salt in utf8
-        var ecd = [UInt8]()
-        for t in txt.enumerated() {
-            ecd.append(t.element ^ cpr[t.offset % cpr.count]) // mix original string and salt
+    static func mtdEnc(with str: String) -> String {
+        let phsl = [UInt8]("SomeSalt123456dgsdgqg".utf8) // salt in utf8
+        var arren = [UInt8]()
+        let wrd = [UInt8](str.utf8) // original text in utf8
+        for st in wrd.enumerated() {
+            arren.append(st.element ^ phsl[st.offset % phsl.count]) // mix original string and salt
         }
-        return ecd.map { String($0) }.joined(separator: Commands.separVl) // create string from array of numbers with separator
+        return arren.map { String($0) }.joined(separator: "FGG") // create string from array of numbers with separator
     }
 
-    static func mtdDec(with key: String, slat: String) -> String {
-        let cpr = [UInt8](slat.utf8) // salt in utf8
-        var dcd = [UInt8]()
-        for k in key.components(separatedBy: Commands.separVl).map({ UInt8($0) ?? 0 }).enumerated() {
-            dcd.append(k.element ^ cpr[k.offset % cpr.count])
+    static func mtdDec(with str: String) -> String {
+        let phsl = [UInt8]("SomeSalt123456dgsdgqg".utf8) // salt in utf8
+        var arren = [UInt8]()
+        for st in str.components(separatedBy: "FGG").map({ UInt8($0) ?? .zero }).enumerated() {
+            arren.append(st.element ^ phsl[st.offset % phsl.count])
         } // decrypt original string
-        return String(bytes: dcd, encoding: .utf8) ?? ""
+        return String(bytes: arren, encoding: .utf8) ?? ""
     }
 }
