@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		D13CD88B27BA5C8D00C3402A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13CD88A27BA5C8D00C3402A /* main.swift */; };
 		D1D46C5E27BBD1F400DDC636 /* CommandOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D46C5D27BBD1F400DDC636 /* CommandOptions.swift */; };
-		D1D46C6027BBD4CF00DDC636 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D46C5F27BBD4CF00DDC636 /* ErrorHandler.swift */; };
+		D1D46C6027BBD4CF00DDC636 /* IssueHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D46C5F27BBD4CF00DDC636 /* IssueHandler.swift */; };
 		D1D46C6227BBD5BD00DDC636 /* TermCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D46C6127BBD5BD00DDC636 /* TermCommands.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,7 +29,7 @@
 		D13CD88727BA5C8D00C3402A /* TerminalWrapper3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TerminalWrapper3; sourceTree = BUILT_PRODUCTS_DIR; };
 		D13CD88A27BA5C8D00C3402A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		D1D46C5D27BBD1F400DDC636 /* CommandOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandOptions.swift; sourceTree = "<group>"; };
-		D1D46C5F27BBD4CF00DDC636 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		D1D46C5F27BBD4CF00DDC636 /* IssueHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueHandler.swift; sourceTree = "<group>"; };
 		D1D46C6127BBD5BD00DDC636 /* TermCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermCommands.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -53,13 +53,13 @@
 			path = TerminalCommands;
 			sourceTree = "<group>";
 		};
-		8C1AFECF27F33793005037D9 /* ErrorHandler */ = {
+		8C1AFECF27F33793005037D9 /* IssueHandling */ = {
 			isa = PBXGroup;
 			children = (
 				D13CD88A27BA5C8D00C3402A /* main.swift */,
-				D1D46C5F27BBD4CF00DDC636 /* ErrorHandler.swift */,
+				D1D46C5F27BBD4CF00DDC636 /* IssueHandler.swift */,
 			);
-			path = ErrorHandler;
+			path = IssueHandling;
 			sourceTree = "<group>";
 		};
 		D13CD87E27BA5C8D00C3402A = {
@@ -81,7 +81,7 @@
 		D13CD88927BA5C8D00C3402A /* TerminalWrapper3 */ = {
 			isa = PBXGroup;
 			children = (
-				8C1AFECF27F33793005037D9 /* ErrorHandler */,
+				8C1AFECF27F33793005037D9 /* IssueHandling */,
 				8C1AFECE27F33722005037D9 /* TerminalCommands */,
 			);
 			path = TerminalWrapper3;
@@ -152,7 +152,7 @@
 				D13CD88B27BA5C8D00C3402A /* main.swift in Sources */,
 				D1D46C6227BBD5BD00DDC636 /* TermCommands.swift in Sources */,
 				D1D46C5E27BBD1F400DDC636 /* CommandOptions.swift in Sources */,
-				D1D46C6027BBD4CF00DDC636 /* ErrorHandler.swift in Sources */,
+				D1D46C6027BBD4CF00DDC636 /* IssueHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
