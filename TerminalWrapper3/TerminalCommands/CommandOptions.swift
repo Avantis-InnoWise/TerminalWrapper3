@@ -1,6 +1,6 @@
 import Foundation
 
-// enumeration with command types
+// Types of commands.
 enum CommandOptions {
     case commandOne
     case commandTwo
