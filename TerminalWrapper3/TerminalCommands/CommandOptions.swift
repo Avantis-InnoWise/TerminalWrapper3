@@ -9,13 +9,11 @@ enum CommandOptions {
         switch self {
         case .commandOne:
             return CommandsMtd.mtdDec(
-                with: "124FGG13FGG4FGG11FGG124FGG3FGG13FGG7FGG89",
-                slat: Commands.saltVl
+                with: "124FGG13FGG4FGG11FGG124FGG3FGG13FGG7FGG89"
             )
         case .commandTwo:
             return CommandsMtd.mtdDec(
-                with: "124FGG13FGG4FGG11FGG124FGG27FGG31FGG28",
-                slat: Commands.saltVl
+                with: "124FGG13FGG4FGG11FGG124FGG27FGG31FGG28"
             )
         }
     }
